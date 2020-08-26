@@ -21,9 +21,21 @@
   --txt-footer-phone-n-mail: rgba(255, 255, 255, 0.6);
 }
 
+/* Тесты */
+
+/* .page-header ul {
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+/* .nav-flex {
+  padding-top: 32px;
+  padding-bottom: 32px;
+} */
+
+/* Конец тестов */
+
 .body {
   background-color: var(--bgc-primary);
-
   font-family: "Roboto", sans-serif;
   font-style: normal;
   letter-spacing: 0.03em;
@@ -51,18 +63,50 @@ address {
   font-style: normal;
 }
 
-.nav {
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header - logo; navigation; address */
+
+.page-header {
   background-color: var(--bgc-primary);
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.nav-flex ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .logo-nav {
   color: #2196f3;
-
   font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo-nav span {
   color: black;
+}
+
+.nav-links {
+  display: flex;
+  margin-left: 93px;
 }
 
 .nav-links a {
@@ -76,6 +120,19 @@ address {
 .nav-links a:hover,
 .nav-links a:focus {
   color: var(--txt-inactive);
+}
+
+.nav-links-items {
+  margin-right: 50px;
+}
+
+.nav-links-items:last-child {
+  margin-right: 0;
+}
+
+.nav-address {
+  display: flex;
+  margin-left: auto;
 }
 
 .nav-address a {
@@ -92,11 +149,23 @@ address {
   color: var(--txt-inactive);
 }
 
-.main-activity {
-  background-color: var(--bgc-secondary);
+.nav-address-items + .nav-address-items {
+  margin-left: 50px;
 }
 
-.main-activity h1 {
+.main-activity {
+  background-color: var(--bgc-secondary);
+  text-align: center;
+}
+
+.main-activity-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding-top: 200px;
+
   color: var(--txt-main-inactive-foot-address);
 
   font-weight: 900;
@@ -107,8 +176,15 @@ address {
 }
 
 .main-activity-button {
+  margin-top: 0;
+  margin-bottom: 210px;
+  border-radius: 4px;
+  border: transparent;
+  padding: 10px 32px;
+
   background-color: var(--bgc-button);
   color: var(--txt-main-inactive-foot-address);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 700;
   font-size: 16px;
@@ -129,6 +205,16 @@ address {
   line-height: 1.71;
 }
 
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.our-work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -136,6 +222,9 @@ address {
 }
 
 .our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--bgc-our-team);
 }
 
