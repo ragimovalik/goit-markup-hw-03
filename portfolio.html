@@ -16,19 +16,31 @@
   </head>
   <body class="body">
     <!--Шапка - лого, навигация, контакты-->
-    <header>
-      <nav class="nav">
-        <a class="logo-nav" href="WebStudio">Web<span>Studio</span></a>
-        <ul class="nav-links">
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="Контакты">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul class="nav-address">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+    <header class="page-header">
+      <div class="container">
+        <nav class="nav-flex">
+          <a class="logo-nav" href="WebStudio">Web<span>Studio</span></a>
+          <ul class="nav-links">
+            <li class="nav-links-items">
+              <a href="./index.html">Студия</a>
+            </li>
+            <li class="nav-links-items">
+              <a href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-links-items">
+              <a href="Контакты">Контакты</a>
+            </li>
+          </ul>
+          <ul class="nav-address">
+            <li class="nav-address-items">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="nav-address-items">
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- Основная информация страницы -->
     <main>
@@ -154,12 +166,20 @@
     </main>
     <!--Подвал-->
     <footer class="footer">
-      <a class="logo-footer" href="WebStudio">Web<span>Studio</span></a>
-      <address class="footer-address">
-        г. Киев, пр-т Леси Украинки, 26 <br />
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
-      </address>
+      <div class="container footer-content-positioning">
+        <a class="logo-footer" href="WebStudio">Web<span>Studio</span></a>
+        <address class="footer-address">
+          <div class="footer-address-elements">
+            г. Киев, пр-т Леси Украинки, 26
+          </div>
+          <div class="footer-address-elements">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </div>
+          <div class="footer-address-elements">
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          </div>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
