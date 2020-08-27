@@ -23,14 +23,7 @@
 
 /* Тесты */
 
-/* .page-header ul {
-  margin-top: 0;
-  margin-bottom: 0;
-} */
-/* .nav-flex {
-  padding-top: 32px;
-  padding-bottom: 32px;
-} */
+/* box-sizing: border-box */
 
 /* Конец тестов */
 
@@ -41,8 +34,15 @@
   letter-spacing: 0.03em;
 }
 
-a {
-  text-decoration: none;
+h1,
+h2,
+h3 {
+  color: var(--txt-nav-n-headings);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 li {
@@ -53,10 +53,8 @@ p {
   color: var(--txt-paragraphs);
 }
 
-h1,
-h2,
-h3 {
-  color: var(--txt-nav-n-headings);
+a {
+  text-decoration: none;
 }
 
 address {
@@ -67,8 +65,6 @@ address {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 0;
-  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -84,11 +80,6 @@ address {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
-}
-
-.nav-flex ul {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .logo-nav {
@@ -153,6 +144,9 @@ address {
   margin-left: 50px;
 }
 
+/* Main */
+/* Main - banner */
+
 .main-activity {
   background-color: var(--bgc-secondary);
   text-align: center;
@@ -192,7 +186,17 @@ address {
   letter-spacing: 0.06em;
 }
 
+/* Main - Advantages Section */
+
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
 .advantages h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -200,15 +204,27 @@ address {
 }
 
 .advantages p {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 
-.advantages {
-  padding-top: 94px;
-  padding-bottom: 0;
+.advantages-list {
+  display: flex;
 }
+
+.advantages-list-items {
+  flex-basis: calc((100%-3 * 30px) / 4);
+}
+
+.advantages-list-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Main - Our Work Section */
 
 .our-work {
   padding-top: 94px;
@@ -216,29 +232,68 @@ address {
 }
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
 }
 
-.our-team {
+.our-work-flex {
+  display: flex;
+}
+
+.our-work-flex-item {
+  width: 370px;
+  height: 294px;
+}
+
+.our-work-flex-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Main - Our Team Section */
+
+.our-team-section {
   padding-top: 94px;
   padding-bottom: 94px;
 
   background-color: var(--bgc-our-team);
 }
 
-.our-team-list h3 {
+.our-team-list {
+  display: flex;
+}
+
+.our-team-list-item {
+  text-align: center;
+}
+
+.our-team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team-person {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.our-team-list p {
+.our-team-person-position {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 }
+
+/* Footer */
 
 .footer {
   background-color: var(--bgc-secondary);
