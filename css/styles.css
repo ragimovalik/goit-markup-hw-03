@@ -72,6 +72,8 @@ address {
 /* Header - logo; navigation; address */
 
 .page-header {
+  border-bottom: 1px solid #ececec;
+
   background-color: var(--bgc-primary);
 }
 
@@ -342,7 +344,35 @@ address {
 
 /* Portfolio Page */
 
+.projects {
+  padding-top: 100px;
+  padding-bottom: 94px;
+}
+
+/* Projects - Filter */
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.filter-type {
+  display: inline-block;
+}
+
+.filter-type:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter button {
+  padding: 6px 22px;
+
+  border-radius: 4px;
+  border: none;
+  outline-color: transparent;
+
+  background-color: var(--bgc-our-team);
   color: var(--txt-nav-n-headings);
   font-weight: 500;
   font-size: 16px;
@@ -353,8 +383,26 @@ address {
 
 .filter button:hover,
 .filter button:focus {
+  border: none;
+  outline-color: transparent;
+
   background-color: var(--bgc-button);
   color: var(--txt-main-inactive-foot-address);
+}
+
+/* Projects - List */
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-list-item {
+  margin-bottom: 30px;
+}
+
+.projects-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
 
 .projects-list h3 {
