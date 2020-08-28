@@ -405,7 +405,7 @@ address {
 }
 
 .projects-list-item {
-  max-width: calc((100%-60px) / 3);
+  flex-basis: calc((100%-60px) / 3);
   flex: 1;
   margin-bottom: 30px;
   outline: 1px solid #eeeeee;
