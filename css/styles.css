@@ -351,7 +351,7 @@ address {
 /* Portfolio Page */
 
 .projects {
-  padding-top: 100px;
+  padding-top: 94px;
   padding-bottom: 64px;
 }
 
@@ -406,6 +406,7 @@ address {
 
 .projects-list-item {
   max-width: calc((100%-60px) / 3);
+  flex: 1;
   margin-bottom: 30px;
   outline: 1px solid #eeeeee;
 }
@@ -444,7 +445,7 @@ address {
 
 .projects-list-name {
   display: block;
-  max-width: 370px;
+  /* max-width: 370px; */
 
   padding: 20px 24px;
 }
