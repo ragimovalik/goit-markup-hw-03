@@ -80,16 +80,21 @@ address {
 .header-flex {
   display: flex;
   align-items: baseline;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .nav-flex {
   display: flex;
   align-items: baseline;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
 }
 
 .logo-nav {
+  margin-right: 93px;
+
   color: #2196f3;
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -104,11 +109,12 @@ address {
 
 .nav-links {
   display: flex;
-  margin-left: 93px;
 }
 
 .nav-links a {
   display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   color: var(--txt-nav-n-headings);
 
