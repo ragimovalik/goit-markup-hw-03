@@ -34,13 +34,10 @@ h3 {
   color: var(--txt-nav-n-headings);
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-}
-
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 li {
@@ -54,10 +51,6 @@ p {
 a {
   text-decoration: none;
   outline: none;
-}
-
-address {
-  font-style: normal;
 }
 
 .container {
@@ -109,6 +102,8 @@ address {
 
 .nav-links {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links a {
@@ -138,7 +133,8 @@ address {
 
 .nav-address {
   display: flex;
-  margin-left: auto;
+  padding: 0;
+  margin: 0 0 0 auto;
 }
 
 .nav-address a {
@@ -236,6 +232,8 @@ address {
 
 .advantages-list {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-list-items {
@@ -264,6 +262,8 @@ address {
 
 .our-work-flex {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .our-work-flex-item {
@@ -285,6 +285,8 @@ address {
 .our-team-list {
   display: flex;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .our-team-list-item {
@@ -297,17 +299,26 @@ address {
 }
 
 .our-team-person {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--bgc-primary);
+}
+
+.our-team-person h3 {
+  margin: 0 0 10px 0;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.our-team-person-position {
-  margin-top: 0;
-  margin-bottom: 0;
+.our-team-person p {
+  margin: 0;
 
   font-weight: 400;
   font-size: 16px;
@@ -325,7 +336,7 @@ address {
 }
 
 .logo-footer {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
 
   color: #2196f3;
@@ -337,12 +348,22 @@ address {
 }
 
 .footer-address {
-  display: inline;
-  color: var(--txt-main-inactive-foot-address);
+  display: block;
 
+  color: var(--txt-main-inactive-foot-address);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-address p {
+  display: block;
+  margin: 0;
+
+  letter-spacing: inherit;
+  color: #ffffff;
 }
 
 .footer-address a {
@@ -371,7 +392,8 @@ address {
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 56px;
+  padding: 0;
+  margin: 0 0 56px 0;
 }
 
 .filter-type {
@@ -409,16 +431,17 @@ address {
 
 /* Projects - List */
 
+/* убрать отступы по умолчанию для списков и ссылок */
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: stretch;
+  padding: 0;
+  margin: 0;
 }
 
 .projects-list-item {
-  flex-basis: calc((100%-60px) / 3);
-  flex: 1;
-  outline: 1px solid #eeeeee;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .projects-list-item:not(:nth-child(3n)) {
@@ -438,13 +461,8 @@ address {
   display: block;
 }
 
-.projects-list-item img {
-  display: block;
-}
-
 .projects-list h3 {
-  margin-top: 0;
-  margin-bottom: 4px;
+  margin: 0 0 4px 0;
 
   font-weight: 700;
   font-size: 18px;
@@ -454,6 +472,7 @@ address {
 
 .projects-list p {
   margin: 0;
+  padding: 0;
 
   font-weight: 400;
   font-size: 16px;
@@ -463,7 +482,9 @@ address {
 
 .projects-list-name {
   display: block;
-  /* max-width: 370px; */
-
+  margin: 0;
   padding: 20px 24px;
+
+  border: 1px solid #eeeeee;
+  border-top: transparent;
 }
